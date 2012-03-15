@@ -1,0 +1,29 @@
+overlay        chrome://messenger/content/messenger.xul        chrome://filtersimportexport/content/overlay.xul
+overlay        chrome://messenger/content/FilterListDialog.xul        chrome://filtersimportexport/content/overlayDialog.xul
+
+content        filtersimportexport        jar:chrome/filtersimportexport.jar!/content/
+skin        filtersimportexport        classic/1.0        jar:chrome/filtersimportexport.jar!/skin/
+
+locale        filtersimportexport        en-US        jar:chrome/filtersimportexport.jar!/locale/en-US/
+locale        filtersimportexport        zh-CN        jar:chrome/filtersimportexport.jar!/locale/zh-CN/
+locale        filtersimportexport        fr-FR        jar:chrome/filtersimportexport.jar!/locale/fr-FR/
+locale        filtersimportexport        ja-JP        jar:chrome/filtersimportexport.jar!/locale/ja-JP/
+locale        filtersimportexport        sk-SK        jar:chrome/filtersimportexport.jar!/locale/sk-SK/
+locale        filtersimportexport        de-DE        jar:chrome/filtersimportexport.jar!/locale/de-DE/
+locale        filtersimportexport        hu-HU        jar:chrome/filtersimportexport.jar!/locale/hu-HU/
+locale        filtersimportexport        it-IT        jar:chrome/filtersimportexport.jar!/locale/it-IT/
+locale        filtersimportexport        es-ES        jar:chrome/filtersimportexport.jar!/locale/es-ES/
+locale        filtersimportexport        pt-PT        jar:chrome/filtersimportexport.jar!/locale/pt-PT/
+locale        filtersimportexport        pl-PL        jar:chrome/filtersimportexport.jar!/locale/pl-PL/
+locale        filtersimportexport        pt-BR        jar:chrome/filtersimportexport.jar!/locale/pt-BR/
+locale        filtersimportexport        sv-SE        jar:chrome/filtersimportexport.jar!/locale/sv-SE/
+locale        filtersimportexport        zh-TW        jar:chrome/filtersimportexport.jar!/locale/zh-TW/
+locale        filtersimportexport        nl-NL        jar:chrome/filtersimportexport.jar!/locale/nl-NL/
+locale        filtersimportexport        ru-RU        jar:chrome/filtersimportexport.jar!/locale/ru-RU/
+locale        filtersimportexport        uk-UA        jar:chrome/filtersimportexport.jar!/locale/uk-UA/
+locale        filtersimportexport        cs-CZ        jar:chrome/filtersimportexport.jar!/locale/cs-CZ/
+locale        filtersimportexport        tr-TR        jar:chrome/filtersimportexport.jar!/locale/tr-TR/
+locale        filtersimportexport        mk-MK        jar:chrome/filtersimportexport.jar!/locale/mk-MK/
+locale        filtersimportexport        da-DK        jar:chrome/filtersimportexport.jar!/locale/da-DK/
+locale        filtersimportexport        sr-RS        jar:chrome/filtersimportexport.jar!/locale/sr-RS/
+

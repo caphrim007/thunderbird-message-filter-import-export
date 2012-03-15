@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <RDF:Description RDF:about="urn:mozilla:install-manifest">
+
+        <em:name>Thunderbird Message Filter Import/Export</em:name>
+        <em:version>1.3.7.6</em:version>
+        <em:id>FiltersImportExport@mozilla.org</em:id>
+        <em:description>Thunderbird Message Filter Import/Export</em:description>
+        <em:creator>Wind Li</em:creator>
+        <em:homepageURL>http://www.teesoft.info/</em:homepageURL>
+        <em:contributor>John Morales</em:contributor>
+        <em:translator>cs-CZ - mik @ www.babelzilla.org</em:translator>
+        <em:translator>da-DK  - Joergen @ www.babelzilla.org</em:translator>
+        <em:translator>nl-NL  - kaaching @ www.babelzilla.org</em:translator>
+        <em:translator>fr-FR  - myahoo @ www.babelzilla.org</em:translator>
+        <em:translator>de-DE  - Team erweiterungen.de, Archaeopteryx @ www.babelzilla.org</em:translator>
+        <em:translator>hu-HU  - Cashman @ www.babelzilla.org</em:translator>
+        <em:translator>it-IT  - Underpass @ www.babelzilla.org</em:translator>
+        <em:translator>ja-JP  - drry @ www.babelzilla.org</em:translator>
+        <em:translator>mk-MK  - renegade06 @ www.babelzilla.org</em:translator>
+        <em:translator>pl-PL  - Wareczek @ www.babelzilla.org</em:translator>
+        <em:translator>pt-PR  - humbertosartini @ www.babelzilla.org</em:translator>
+        <em:translator>pt-PT  - lloco @ www.babelzilla.org</em:translator>
+        <em:translator>ru-RU  - Sergeys @ www.babelzilla.org</em:translator>
+        <em:translator>sk-SK  - Slovak_Team @ www.babelzilla.org</em:translator>
+        <em:translator>es-ES  - chuzo @ www.babelzilla.org</em:translator>
+        <em:translator>sv-SE  - patrikjansson @ www.babelzilla.org</em:translator>
+        <em:translator>uk-UA  - Sappa @ www.babelzilla.org</em:translator>
+        
+<em:targetApplication>
+<!-- Mozilla Thunderbird -->
+	<RDF:Description>
+		<em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+		<em:minVersion>1.5</em:minVersion>
+		<em:maxVersion>3.1.*</em:maxVersion>
+	</RDF:Description>
+</em:targetApplication>
+
+<em:targetApplication>
+<!-- Mozilla Suite 1.x -->
+	<RDF:Description>
+		<em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+		<em:minVersion>1.7</em:minVersion>
+		<em:maxVersion>1.8</em:maxVersion>
+	</RDF:Description>
+</em:targetApplication>
+
+
+        
+        <em:file>
+         <RDF:Description about="urn:mozilla:extension:file:filtersimportexport.jar">
+            <em:package>content/</em:package>
+            <em:locale>locale/en-US/</em:locale>
+            <em:skin>skin/</em:skin>
+        </RDF:Description>
+       </em:file>
+    </RDF:Description>
+</RDF:RDF>
