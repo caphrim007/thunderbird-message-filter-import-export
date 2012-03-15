@@ -2,9 +2,9 @@
  * borrowed from the Tabbrowser Preferences extension
  */
 
-var author      = "Wind Li"
+var author      = "Tim Rupp"
 var displayname = "Mozilla Message Filter Import/Export";
-var version     = "1.3.0";
+var version     = "1.3.7.7";
 var packagename = "filtersimportexport";
 var packagefile = packagename + ".jar";
 
