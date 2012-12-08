@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
-         xmlns:NC="http://home.netscape.com/NC-rdf#"
-         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    xmlns:NC="http://home.netscape.com/NC-rdf#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <RDF:Description RDF:about="urn:mozilla:install-manifest">
-
         <em:name>Thunderbird Message Filter Import/Export</em:name>
-        <em:version>1.3.7.7</em:version>
+        <em:version>1.4.0</em:version>
         <em:id>FiltersImportExport@mozilla.org</em:id>
         <em:description>Thunderbird Message Filter Import/Export</em:description>
         <em:creator>Tim Rupp</em:creator>
@@ -30,32 +29,30 @@
         <em:translator>sv-SE  - patrikjansson @ www.babelzilla.org</em:translator>
         <em:translator>uk-UA  - Sappa @ www.babelzilla.org</em:translator>
         
-<em:targetApplication>
-<!-- Mozilla Thunderbird -->
-	<RDF:Description>
-		<em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
-		<em:minVersion>1.5</em:minVersion>
-		<em:maxVersion>13.*</em:maxVersion>
-	</RDF:Description>
-</em:targetApplication>
+        <em:targetApplication>
+        <!-- Mozilla Thunderbird -->
+            <RDF:Description>
+                <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+                <em:minVersion>1.5</em:minVersion>
+                <em:maxVersion>13.*</em:maxVersion>
+            </RDF:Description>
+        </em:targetApplication>
 
-<em:targetApplication>
-<!-- Mozilla Suite 1.x -->
-	<RDF:Description>
-		<em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
-		<em:minVersion>1.7</em:minVersion>
-		<em:maxVersion>1.8</em:maxVersion>
-	</RDF:Description>
-</em:targetApplication>
+        <em:targetApplication>
+        <!-- Mozilla Suite 1.x -->
+            <RDF:Description>
+                <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+                <em:minVersion>1.7</em:minVersion>
+                <em:maxVersion>1.8</em:maxVersion>
+            </RDF:Description>
+        </em:targetApplication>
 
-
-        
         <em:file>
-         <RDF:Description about="urn:mozilla:extension:file:filtersimportexport.jar">
-            <em:package>content/</em:package>
-            <em:locale>locale/en-US/</em:locale>
-            <em:skin>skin/</em:skin>
-        </RDF:Description>
-       </em:file>
+            <RDF:Description about="urn:mozilla:extension:file:filtersimportexport">
+                <em:package>content/</em:package>
+                <em:locale>locale/en-US/</em:locale>
+                <em:skin>skin/</em:skin>
+            </RDF:Description>
+        </em:file>
     </RDF:Description>
 </RDF:RDF>
