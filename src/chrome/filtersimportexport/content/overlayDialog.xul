@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://filtersimportexport/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://filtersimportexport/locale/overlay.dtd">
+<overlay id="filterListDialog-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="overlay.js"/>
+    <window id="filterListDialog">
+        <script type="application/x-javascript">
+            window.addEventListener("load", filtersimportexport.overlayDialog, false); 
+        </script>
+        <stringbundleset id="filtersimportexportStringbundleset">
+            <stringbundle id="filtersimportexportStrings"
+                src="chrome://filtersimportexport/locale/filtersimportexport.properties"/>
+        </stringbundleset>	
+        <button id="exportBurron"
+            label="&FiltersExport.label;"
+            oncommand="filtersimportexport.onExportFilter();">
+        </button>
+        <button id="importButton"
+            label="&FiltersImport.label;"
+            oncommand="filtersimportexport.onImportFilter();"
+            hidden="true">
+        </button>
+    </window>
+</overlay>

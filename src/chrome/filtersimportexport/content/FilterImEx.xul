@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://filtersimportexport/locale/FilterImEx.dtd">
+
+<window xmlns:nc="http://home.netscape.com/NC-rdf#" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    title="&title.label;"
+    onload="filtersimportexport.onAccountLoad();">
+    <script src="overlay.js"/>
+    <stringbundleset id="filtersimportexportStringbundleset">
+        <stringbundle id="filtersimportexportStrings" src="chrome://filtersimportexport/locale/filtersimportexport.properties"/>
+    </stringbundleset>		
+    <hbox align="center">
+        <description flex="1">&separate.label;</description>
+        <menulist id="serverMenu"
+            datasources="rdf:msgaccountmanager rdf:mailnewsfolders"
+            sortResource="http://home.netscape.com/NC-rdf#FolderTreeName"
+            sortDirection="ascending"
+            ref="msgaccounts:/">
+            <template>
+                <rule iscontainer="true" isempty="false" nc:ServerType="nntp">
+                    <menupopup id="serverMenuPopup">
+                        <menu uri="..." 
+                            oncommand="filtersimportexport.onFilterServerClick(event.target)"
+                            class="folderMenuItem menu-iconic" 
+                            IsServer="rdf:http://home.netscape.com/NC-rdf#IsServer"
+                            IsSecure="rdf:http://home.netscape.com/NC-rdf#IsSecure"
+                            ServerType="rdf:http://home.netscape.com/NC-rdf#ServerType"
+                            label="rdf:http://home.netscape.com/NC-rdf#Name">
+                            <menupopup class="menulist-menupopup">
+                                <menuitem label="&choosethisnewsserver.label;"
+                                    oncommand="filtersimportexport.onFilterServerClick(event.target.parentNode.parentNode)"/>
+                                <menuseparator/>
+                            </menupopup>
+                        </menu>
+                    </menupopup>
+                </rule>
+                <rule nc:ServerType="nntp">
+                    <menupopup>
+                        <menuitem uri="..." value="..."
+                            class="folderMenuItem menuitem-iconic"
+                            IsServer="rdf:http://home.netscape.com/NC-rdf#IsServer"
+                            IsSecure="rdf:http://home.netscape.com/NC-rdf#IsSecure"
+                            ServerType="rdf:http://home.netscape.com/NC-rdf#ServerType"
+                            label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                    </menupopup>
+                </rule>
+                <rule nc:SupportsFilters="true">
+                    <menupopup>
+                        <menuitem uri="..." value="..."
+                            oncommand="filtersimportexport.onFilterServerClick(event.target)"
+                            class="folderMenuItem menuitem-iconic"
+                            IsServer="rdf:http://home.netscape.com/NC-rdf#IsServer"
+                            IsSecure="rdf:http://home.netscape.com/NC-rdf#IsSecure"
+                            ServerType="rdf:http://home.netscape.com/NC-rdf#ServerType"
+                            label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                    </menupopup>
+                </rule>
+            </template>
+            <menupopup/>
+        </menulist>
+        <button label="&import.label;" oncommand="filtersimportexport.onImportFilter();"/>
+    </hbox>
+</window>

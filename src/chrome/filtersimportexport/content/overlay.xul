@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://filtersimportexport/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://filtersimportexport/locale/overlay.dtd">
+<overlay id="filtersimportexport-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="overlay.js"/>
+    <stringbundleset id="filtersimportexportStringbundleset">
+        <stringbundle id="filtersimportexportStrings"
+            src="chrome://filtersimportexport/locale/filtersimportexport.properties"/>
+    </stringbundleset>
+    <menupopup id="taskPopup">
+        <menuitem id="filtersimportexportimport"
+            insertafter="filtersCmd"
+            label="&FiltersImport.label;"
+            oncommand="filtersimportexport.onMenuItemCommand(event)"/>  	
+    </menupopup>
+</overlay>
