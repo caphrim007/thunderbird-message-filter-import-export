@@ -1,7 +1,3 @@
-/* install.js, for Cute Menus 
- * borrowed from the Tabbrowser Preferences extension
- */
-
 var author      = "Tim Rupp"
 var displayname = "Mozilla Message Filter Import/Export";
 var version     = "1.3.7.7";
