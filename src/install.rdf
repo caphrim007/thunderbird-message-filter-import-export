@@ -38,15 +38,6 @@
             </RDF:Description>
         </em:targetApplication>
 
-        <em:targetApplication>
-        <!-- Mozilla Suite 1.x -->
-            <RDF:Description>
-                <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
-                <em:minVersion>1.7</em:minVersion>
-                <em:maxVersion>1.8</em:maxVersion>
-            </RDF:Description>
-        </em:targetApplication>
-
         <em:file>
             <RDF:Description about="urn:mozilla:extension:file:filtersimportexport">
                 <em:package>content/</em:package>
