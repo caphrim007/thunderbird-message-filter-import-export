@@ -72,12 +72,15 @@ filtersimportexport = {
         filtersimportexport.gFilterListMsgWindow.domWindow = window
         filtersimportexport.gFilterListMsgWindow.rootDocShell.appType = Components.interfaces.nsIDocShell.APP_TYPE_MAIL
 
+        return
     ,
     
     onFilterServerClick: (select) ->
         itemURI = selection.getAttribute('id')
         serverMenu = document.getElementById("serverMenu")
         serverMenu.setAttribute "uri", itemURI
+
+        return
     ,
 
     onMenuItemCommand: () ->
@@ -315,7 +318,7 @@ filtersimportexport = {
         file.initWithPath(aPath)
 
         fileStream = Components.classes['@mozilla.org/network/file-output-stream;1'].createInstance(Components.interfaces.nsIFileOutputStream)
-        fileStream.init(file, 0x02 | 0x08 | 0x20, 0o0664, 0)
+        fileStream.init(file, 0x02 | 0x08 | 0x20, 0o664, 0)
         return fileStream
     ,
 
@@ -329,7 +332,7 @@ filtersimportexport = {
         file.initWithPath(aPath)
 
         fileStream = Components.classes['@mozilla.org/network/file-input-stream;1'].createInstance(Components.interfaces.nsIFileInputStream)
-        fileStream.init(file, 0x01, 0o0664, 0)
+        fileStream.init(file, 0x01, 0o664, 0)
         return fileStream
     ,
 
@@ -358,6 +361,8 @@ filtersimportexport = {
 
         # Append them to the end of the button box
         vboxElement.appendChild(exportButton)
+
+        return
     ,
 
     getPref: () ->
@@ -374,6 +379,7 @@ filtersimportexport = {
 
     setHeader: (header) ->
         this.getPref().setCharPref(".customHeaders",header)
+        return
     ,
 
     mergeHeaders: (headers) ->
@@ -400,4 +406,5 @@ filtersimportexport = {
                 newStr = newHeaders[i]
 
         this.setHeader(newStr)
+        return
 }
