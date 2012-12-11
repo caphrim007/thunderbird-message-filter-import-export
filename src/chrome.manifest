@@ -1,7 +1,8 @@
+content     filtersimportexport     chrome/content/
+
 overlay     chrome://messenger/content/messenger.xul            chrome://filtersimportexport/content/overlay.xul
 overlay     chrome://messenger/content/FilterListDialog.xul     chrome://filtersimportexport/content/overlayDialog.xul
 
-content     filtersimportexport     chrome/content/
 skin        filtersimportexport     classic/1.0     chrome/skin/
 
 locale      filtersimportexport     en-US   chrome/locale/en-US/
